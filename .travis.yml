@@ -19,7 +19,6 @@ before_install:
   - 'cp config/database.yml.sqlite3 config/database.yml'
   - gem install bundler
 
-
 before_script:
   - 'RAILS_ENV=test bundle exec rake setup'
   - "export DISPLAY=:99.0"
