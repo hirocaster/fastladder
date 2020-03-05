@@ -24,7 +24,7 @@ if adapters.any?
     case adapter
     when 'mysql2'     ; gem 'mysql2'
     when 'mysql'      ; gem 'mysql'
-    when /postgres/   ; gem 'pg'
+    when /postgres/   ; gem 'pg', '0.21.0'
     when /sqlite3/    ; gem 'sqlite3'
     else
       warn("Unknown database adapter `#{adapter}` found in config/database.yml, use Gemfile.local to load your own database gems")
